@@ -231,18 +231,63 @@
         
     
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            <section>
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="myfirstname">First Name<span class="required">*</span></label> 
+                    <input type="myfirstname" name="myfirstname" placeholder="Enter first name" required>
 
+                    <label for="mylastname">Last Name<span class="required">*</span></label> 
+                    <input type="mylastname" name="mylastname" placeholder="Enter last name" required>
 
-            Contact Us
-            First Name (Enter first name)
-            Last Name (Enter last name)
+                    <fieldset>
+                        <legend>Method of Contact</legend>
+                        <input type="radio" name="contact-pref" id="pref-email" checked>
+                        <label for="pref-email">Email</label>
+                        <input type="radio" name="contact-pref" id="pref-phone">
+                        <label for="pref-phone">Phone</label>
+                        <input type="radio"
+                        name="contact-pref" id="pref-text">
+                        <label for="pref-text">Text</label>
+                    </fieldset>
+                    
+                    <label for="my-email">Email Address<span class="required">*</span></label>
+				    <input type="email" name="my-email" id="my-email" placeholder="Enter Email"required>
+                    <label for="my-phone">Phone<span class="required">*</span></label>
+				    <input type="tel" name="my-phone" id="my-phone" placeholder="Enter telephone number"required>
+                    
+                    <label for="destination">Destination<span class="required">*</span></label>
+                            <div class="custom-select">
+                                <select name="destination" id="destination" required>
+                                    <option value="" disabled selected>Choose an Option</option>
+                                    <option value="barcelona">Barcelona</option>
+                                    <option value="granada">Granada</option>
+                                    <option value="ibiza">Ibiza</option>
+                                    <option value="madrid">Madrid</option>
+                                    <option value="majora">Majora</option>
+                                    <option value="seville">Seville</option>
+                                    <option value="tenerife">Tenerife</option>
+                                    <option value="valencia">Valencia</option>
+                                </select>
+                                <span class="focus"></span>
+                            </div>
 
-            Contact Method (Email, Text, Phone)
-            Email Address (Enter Email)
-            Phone Number (Enter telephone number)
+                    <label for="traveltime">Travel Time<span class="required">*</span></label>
+                            <div class="custom-select">
+                                <select name="traveltime" id="traveltime" required>
+                                    <option value="" disabled selected>Choose an Option</option>
+                                    <option value="fall">Fall</option>
+                                    <option value="winter">Winter</option>
+                                    <option value="spring">Spring</option>
+                                    <option value="summer">Summer</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                                <span class="focus"></span>
+                            </div>
 
-            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-            Travel Time (Fall, Winter, Spring, Summer, Flexible)
+                    <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
+                </form>
+            </section>
 
 
         </main>
