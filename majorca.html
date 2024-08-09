@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Valerie Loera">
+        <meta name="description" content="The website for Majorca, best place to plan a trip.">
         <title>Wunderlust Travel</title>
         <!-- OPEN GRAPH/SOCIAL MEDIA META TAGS -->
 
@@ -21,13 +22,20 @@
         <meta property="og:image" content="https://lpalson.github.io/wunderlust/images/logo.png">
         <meta property="og:url" content="https://WunderlustTravel.org">
         <meta property="og:type" content="Website">
+
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 <!--         Reveiew the document and add the proper tags to all of the headings  throughout. Use the outline feature in the validator to ensure that these have been added correctly. See the image of the correct outline as a reference if you have questions 
 
 Also review the alt text on all of the images to ensure that it is descriptive and appropriate-->
         <header>
-            <img src="images/logo.png" alt="The Wunderlust logo shows blue waves and the outline of two palm trees against an orange sun">
+            <picture>
+                <source media="(max-width: 320px)" srcset="images/logo-S.png">
+                <source media="(max-width: 780px)" srcset="images/logo-M.png">
+                <source media="(min-width: 1024px)" srcset="images/logo-L.png">
+                <img src="images/logo-S.png" alt="logo of wunderlust, a sun with two palm tress with water in front">
+            </picture>
             <h1>Wunderlust Travel</h1>
             <p>Let Wunderlust Travel help you plan the trip of your dreams!</p>
             <nav>
@@ -44,9 +52,24 @@ Also review the alt text on all of the images to ensure that it is descriptive a
             <article>  
                 <h2>Majorca</h2>
                 <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-                <img src="images/majorca-waves.png" alt="Turquoise blue waters with white wave caps crashing against a rock cliff">
-                <img src="images/majorca-beach.png" alt="beach">
-                <img src="images/majorca-cove.png" alt="Deep blue water leading to the horizon with the island and trees in the foreground">
+                <picture>
+                    <source media="(min-width: 320px)" srcset="images/majorca-waves-S.png">
+                    <source media="(max-width: 780px)" srcset="majorca-waves-M.png">
+                    <source media="(max-width: 1024px)" srcset="majorca-waves-L.png">
+                    <img src="majoeca-waves.png" alt="Waves in Majorca">
+                </picture>
+                <picture>
+                    <source media="(min-width: 320px)" srcset="images/majorca-beach-S.png">
+                    <source media="(max-width: 780px)" srcset="majorca-beach-M.png.png">
+                    <source media="(max-width: 1024px)" srcset="majorca-beach-L.png">
+                    <img src="majoeca-beach.png" alt="Beach in Majorca">
+                </picture>
+                <picture>
+                    <source media="(min-width: 320px)" srcset="images/majorca-cove-S.png">
+                    <source media="(max-width: 780px)" srcset="majorca-cove-M.png.png">
+                    <source media="(max-width: 1024px)" srcset="majorca-cove-L.png">
+                    <img src="majoeca-cove.png" alt="Cove in Majorca">
+                </picture>
                 <section>
                     <h3>Plan Your Trip</h3>
                     <section>
@@ -81,25 +104,45 @@ Also review the alt text on all of the images to ensure that it is descriptive a
                 <section>
                     <h3>Testimonials</h3>
                     <section>
-                        <img src="images/mirando-blake.png" alt="Miranda Blake has a blonde bob and is wearing dark sunglasses">
+                        <picture>
+                            <source media="(min-width: 320px)" srcset="images/miranda-blake-S.png">
+                            <source media="(max-width: 780px)" srcset="miranda-blake-M.png">
+                            <source media="(max-width: 1024px)" srcset="miranda-blake-L.png">
+                            <img src="miranda-blake.png" alt="Photo of Miranada Blake">
+                        </picture>
                         <h4>Amanda Blake</h4>
                         <p>Traveling From: London, England</p>
                         <q>I traveled here for business, but my stay was extended. Now it is my home.</q>
                     </section>
                     <section>
-                        <img src="images/max-winter.png" alt="Max Winter">
+                        <picture>
+                            <source media="(min-width: 320px)" srcset="images/max-winter-S.png">
+                            <source media="(max-width: 780px)" srcset="max-winter-M.png">
+                            <source media="(max-width: 1024px)" srcset="max-winter-L.png">
+                            <img src="max-winter.png" alt="Photo of Max Winter">
+                        </picture> 
                         <h4>Max Winter</h4>
                         <p>Traveling From: Berlin, Germany</p>
                         <q>Great escape from my reality. Beautiful sunsets, wonderful people, great beer.</q>
                     </section>
                     <section>
-                        <img src="images/ines-villegoes.png" alt="lady person">
+                        <picture>
+                            <source media="(min-width: 320px)" srcset="images/ines-villegoes-S.png">
+                            <source media="(max-width: 780px)" srcset="ines-villegoes-M.png">
+                            <source media="(max-width: 1024px)" srcset="ines-villegoes-L.png">
+                            <img src="ines-villegoes.png" alt="Photo of Ines Villegoes">
+                        </picture>
                         <h4>Inés Villegos</h4>
                         <p>Traveling From: Barcelona, Spain</p>
                         <q>A very safe environment for all travelers.</q>
                     </section>
                     <section>
-                        <img src="images/carmen-lorenzo.png" alt="Carmen Lorenzo has long, dark brown hair and is wearing gold hoop earrings">
+                        <picture>
+                            <source media="(min-width: 320px)" srcset="images/carmen-lorenzo-S.png">
+                            <source media="(max-width: 780px)" srcset="carmen-lorenzo-M.png">
+                            <source media="(max-width: 1024px)" srcset="carmen-lorenzo-L.png">
+                            <img src="carmen-lorenzo.png" alt="Photo of Caremn Lorenzo">
+                        </picture>
                         <h4>Carmen Lorenzo</h4>
                         <p>Traveling From: Madrid, Spain</p>
                         <q>Live, laugh, love-- everything you need in Majorca.</q>
