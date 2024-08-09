@@ -118,6 +118,7 @@ header h1{
     padding-bottom: 20px;
     line-height: 1.5;
     font-size: large;
+    position: relative;
 }
 
 header label{
@@ -127,7 +128,6 @@ header label{
     cursor: pointer;
     padding: 10px 70px;
     background-color: var(--yellow);
-    color: var(--black);
     width: 175px;
 }
 
@@ -137,11 +137,20 @@ nav ul{
 
 #toggle:checked + label + ul{
     display: block;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    background-color: var(--yellow);
-    color: var(--black);
-    width: 175px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 20px; 
+    background-color: var(--teal);
+    width: 1000px;
+    height: 1000px;
+}
+
+#toggle:checked + label + ul li a{
+    text-decoration: none;
 }
 
 header h2{
