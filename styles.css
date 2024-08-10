@@ -523,12 +523,15 @@ footer a{
     
     nav a{
         background-color: var(--white);
-        color: var(--black);
+        color: var(--blue);
         width: 175px;
-        padding:20px;
+        padding:15px;
         height: 50px; 
     
         text-align: center;
+    }
+    nav a:hover{
+        background-color: var(--yellow);
     }
     
     ul a{
@@ -680,7 +683,7 @@ footer a{
 
     nav{
         position: relative;
-        top: -228px;
+        top: -250px;
         left: 293px;
         scale: 70%
     }
